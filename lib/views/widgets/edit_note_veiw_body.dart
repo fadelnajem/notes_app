@@ -1,11 +1,24 @@
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/material.dart';
+import 'package:notes_app/views/widgets/custom_app_bar.dart';
 
 class EditNoteVeiwBody extends StatelessWidget {
   const EditNoteVeiwBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Column(
+        children: const [
+          SizedBox(
+            height: 28,
+          ),
+          CustomAppBar(
+            titleAppBar: 'Edit Note',
+            icon: Icons.check,
+          ),
+        ],
+      ),
+    );
   }
 }
