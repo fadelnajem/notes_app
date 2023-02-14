@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:notes_app/constants.dart';
 
 class CustomBotton extends StatelessWidget {
@@ -11,7 +10,7 @@ class CustomBotton extends StatelessWidget {
       padding: const EdgeInsets.only(top: 64),
       child: GestureDetector(
         onTap: (){
-          
+
         },
         child: Container(
           decoration: BoxDecoration(
