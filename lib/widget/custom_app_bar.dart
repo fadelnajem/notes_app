@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'custom_search_icon.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key, required this.title, required this.icon, this.onPressed});
+  const CustomAppBar(
+      {super.key, required this.title, required this.icon, this.onPressed});
   final String title;
   final IconData icon;
   final void Function()? onPressed;
@@ -19,9 +20,12 @@ class CustomAppBar extends StatelessWidget {
           ),
         ),
         const Spacer(),
-        CustomSearchIcon(
-          onPressed: onPressed,
-          icon: icon,
+        GestureDetector(
+          
+          child: CustomSearchIcon(
+            onPressed: onPressed,
+            icon: icon,
+          ),
         ),
       ],
     );
